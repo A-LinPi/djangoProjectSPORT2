@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Sport</title>
+    <link rel="stylesheet" href="{% static 'css/main2.css' %}">
+</head>
+
+<body>
+    {% block menu %}
+    <div class="menu">
+        <a href="{% url 'home' %}">Главная</a>
+        <a href="{% url 'foot' %}">Футбол</a>
+        <a href="{% url 'bask' %}">Баскетбол</a>
+        <a href="{% url 'vol' %}">Воллейбол</a>
+        <a href="{% url 'ten' %}">Теннис</a>
+    </div>
+    {% endblock menu %}
+    {% block content %}
+    <h1>Все о спорте</h1>
+        <img class="mainpic" src="{% static 'img/banner.png' %}">
+    {% endblock content %}
+</body>
+</html>

@@ -1,0 +1,10 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block content %}
+    <h1>Информация о спортсмене</h1>
+    <h2>{{ name }}</h2>
+    <img height="450px" src="{% static pic %}" alt="">
+    <img src="{% static picsport %}" alt="">
+    <p>{{ desc }}</p>
+{% endblock content %}

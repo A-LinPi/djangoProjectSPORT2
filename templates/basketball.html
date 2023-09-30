@@ -1,0 +1,10 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+    <h1>Баскетбол</h1>
+    <div class="gl">
+        <a href="{%  url 'smen' sport='basketball' id=0 %}"> <img src="{% static 'img/bs/Дрекслер.jpg' %}"> </a>
+        <a href="{%  url 'smen' sport='basketball' id=1 %}"><img src="{% static 'img/bs/Родман.jpg' %}"></a>
+        <a href="{%  url 'smen' sport='basketball' id=2 %}"><img src="{% static 'img/bs/Майкен.jpg' %}"></a>
+    </div>>
+{% endblock content %}
